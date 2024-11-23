@@ -16,7 +16,7 @@ int main() {
     defaultBox.display();
 
     // Create a TextBox with an initial value
-    TextBox explicitBox("Hello, world!");
+    TextBox explicitBox("Hello, CIS 25!");
     explicitBox.display();
 
     // Update TextBox value with user input
