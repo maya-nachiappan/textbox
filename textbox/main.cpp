@@ -8,16 +8,24 @@
 #include "textbox.hpp"
 #include <iostream>
 
-int main() 
-{
-    UIComponents::TextBox defaultBox; // Calls default constructor
+int main() {
+    using namespace UIComponents;
+
+    // Create a default TextBox
+    TextBox defaultBox;
     defaultBox.display();
 
-    UIComponents::TextBox explicitBox("Hello, world!"); // Calls explicit constructor
+    // Create a TextBox with an initial value
+    TextBox explicitBox("Hello, world!");
     explicitBox.display();
 
-    explicitBox.setValue("Updated value");
-    explicitBox.display();
-    
+    // Update TextBox value with user input
+    std::cout << "Enter a new value for the TextBox: ";
+    std::string userInput;
+    std::getline(std::cin, userInput); // Read input including spaces
+
+    defaultBox.setValue(userInput);
+    defaultBox.display();
+
     return 0;
 }
