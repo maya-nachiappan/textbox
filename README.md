@@ -1,0 +1,1 @@
+This program creates a class called TextBox which is wrapped in UIComponents namespace, which allows the creation and modification of a string value. It has a default constructor, an explicit constructor, and takes input from the user to update the string value too.
